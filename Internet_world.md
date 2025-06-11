@@ -34,5 +34,48 @@ If your computer is situated behind a firewall, the firewall verifies that the s
 
 ### The Secure Passage: HTTPS/SSL
 
-The server receiving the request sends a response back to the load balancer, which in turn sends it back to your browser. The response typically includes **HTML (Hyper Text Markup Language)**, **CSS (Cascading Style Sheets),** and **JavaScript files that make up the webpage**. The HTML files instruct the browser how to display the content, while the CSS file styles it, and the JavaScript file adds interactivity.
+Once the connection is established, your browser sends a request for the webpage using a security protocol like **SSL (Transport Layer Security) or TLS (Transport Layer Security)** to encrypt the data that will be exchanged between your computer and the server. This encryption is responsible for the "s" in "https" (Hypertext Transfer Protocol Secure), indicating a secure connection.
+
+When your browser connects to Google's server using HTTPS, it agrees with Google's server on the version of SSL/TLS to use and creates a secure, encrypted channel for data transmission.
+
+To explain what is happening here, let me use an analogy.
+
+HTTPS is like a locked box used to send messages over the internet. When you use HTTPS to send a message, you put it in the locked box and send it to the recipient. Only the recipient has the key to unlock the box and read the message.
+
+SSL/TLS are like special codes used to lock and unlock the box. When you use HTTPS to send a message, you and the recipient agree on the code to use to lock and unlock the box. This way, only you and the recipient know the code and can read the message.
+
+When you enter "google.com" into your browser, the browser is like the sender of the message. The server hosting google.com is like the recipient. The browser sends a request for the webpage using HTTPS, which is like putting the request in a locked box and sending it to the server. The server then sends the webpage back to the browser using HTTPS, which is like putting the webpage in the locked box and sending it back to the browser.
+
+### The Distributor: Load Balancer
+
+A load balancer is a tool that distributes incoming network traffic across a group of servers or resources. Its main function is to ensure that the traffic is distributed evenly across the servers to prevent overloading any single server and to increase the overall capacity and reliability of the system.
+
+Google, which receives billions of website visitors a day, requires many servers to serve all these users. Therefore, they need to set up a load balancer to ensure that some servers are not overburdened while others are underutilized. When a browser tries to access google.com, the load balancer receives the incoming request from the browser and forwards it to one of the servers in the Google server network. The server chosen will depend on the type of load balancing algorithm implemented.
+
+### The Frontman: Web Server 
+
+A web server is a software that is in charge of managing requests for web pages from clients (such as a browser attempting to access google.com). When a client sends a request for a web page to a website server, the server handles the request and returns the appropriate response to the client.
+
+This means that Google's server will obtain a request from the load balancer when attempting to access google.com.
+
+The web server would then handle the request and produce a response, which would usually consist of the HTML, CSS, and JavaScript files that make up the web page.
+
+The website server would then send this response back to the load balancer, which would forward it to the browser. The browser would then use the HTML, CSS, and JavaScript files to display the web page for the user.
+
+
+### The Processor: Application Server
+
+Unlike the web server, the application server handles **dynamic content**. When using "google.com," the application server will be responsible for producing the search results (which change based on the query you input into the search engine).
+
+When you submit a search query to Google, the request is first sent to the load balancer, which forwards it to one of the web servers in the Google server network. The web server then sends the request to the application server, which handles the request and produces the search results. Depending on the complexity of the search query, the application server may need to make a request to a database to retrieve the necessary data.
+
+For instance, if you are searching for a particular product on an e-commerce website, the application server may need to obtain information about the product from a database.
+
+Once the application server has acquired the required data, it sends it back to the website server, which includes it in the response that is sent back to the browser. The browser then uses this information to display the search results to you.
+
+
+
+
+
+
 
