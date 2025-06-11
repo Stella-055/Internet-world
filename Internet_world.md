@@ -28,9 +28,31 @@ Our journey begins with a **Domain Name System** (DNS) request. The browser seek
 
 With the IP address at hand,**Transmission Control Protocol/Internet Protocol** (TCP/IP) - the protocol suite - kicks in. TCP establishes a reliable connection between your machine and Google's server, ensuring data integrity and order. IP, on the other hand, is responsible for routing the data packets to the correct destination.This entire process is known as a **"handshake."**
 
+Here is what happens in greater detail
+
+* The browser uses IP to send a request to the server to establish a connection.
+
+* The server receives the request and sends a message back acknowledging the request to establish a connection.( handshake procedure.)
+
+* Once the handshake is completed, the browser can use TCP to send a request for the webpage it wants to access (in this instance, the homepage of google.com). This request is made using TCP, which ensures that the request is sent reliably and in the correct sequence.
+
+* The server receives the request and sends the HTML code for the homepage of google.com back to the browser.  This response is also sent using TCP to ensure dependable transmission.
+
+* The browser receives the HTML code and uses it to display the webpage on your screen. Any resources (such as images) that the webpage requires are also requested and received using TCP/IP.
+
 ### The Guard: Firewall
 
-If your computer is situated behind a firewall, the firewall verifies that the specific request you are making is authorized before granting it. Additionally, if the server you are attempting to access is also behind a firewall, a similar check will be conducted before you can ultimately connect to the server.
+A firewall is a security system that regulates and monitors incoming and outgoing network traffic based on predetermined security policies. Its primary objective is to safeguard a network from external threats, such as hackers and malware.
+
+When you type a URL like "google.com" into your browser, the request that your browser makes to Google's server passes through the firewall en route. The firewall examines the incoming request to ensure that it is permitted based on its security policies.
+
+There are two primary types of security policies that a firewall employs to examine incoming requests:
+
+* policies that allow or prohibit traffic based on the origin and destination of the request. For example, a firewall may be programmed to block all traffic from specific countries or to allow only specific IP addresses to access the network.
+
+* policies that allow or prohibit traffic based on the type of traffic. For example, a firewall may be programmed to block all traffic on certain ports (such as those used by malware) or to allow only certain types of traffic (such as HTTP or HTTPS).
+
+
 
 ### The Secure Passage: HTTPS/SSL
 
