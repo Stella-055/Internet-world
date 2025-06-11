@@ -106,7 +106,7 @@ In your instance, your browser would receive the response from the website serve
 * performing any JavaScript code that exists on the webpage
 * After the webpage has been entirely displayed, you can now engage with it by pressing links, typing text, or interacting with other features on the webpage.
 
-In conclusion, I hope that this short blog has given you a better understanding of everything that occurs "under the hood" when you type www.google.com into your browser and press Enter.You are 
+In conclusion, I hope that this short blog has given you a better understanding of everything that occurs "under the hood" when you type www.google.com into your browser and press Enter.
 
 
 
