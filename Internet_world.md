@@ -85,7 +85,7 @@ The web server would then handle the request and produce a response, which would
 The website server would then send this response back to the load balancer, which would forward it to the browser. The browser would then use the HTML, CSS, and JavaScript files to display the web page for the user.
 
 
-### The Processor: Application Server
+### The Processor: Application Server and The Storer: Database
 
 Unlike the web server, the application server handles **dynamic content**. When using "google.com," the application server will be responsible for producing the search results (which change based on the query you input into the search engine).
 
@@ -94,6 +94,19 @@ When you submit a search query to Google, the request is first sent to the load 
 For instance, if you are searching for a particular product on an e-commerce website, the application server may need to obtain information about the product from a database.
 
 Once the application server has acquired the required data, it sends it back to the website server, which includes it in the response that is sent back to the browser. The browser then uses this information to display the search results to you.
+
+### The Grand Finale: Rendering
+
+When a browser receives a response from a website server, it processes the HTML, CSS, and JavaScript files that are included in the response in order to display the web page. The displaying process involves interpreting the HTML and CSS code, displaying any images or other media that are included on the page, and executing any JavaScript code that is present on the page.
+
+In your instance, your browser would receive the response from the website server, which includes the HTML, CSS, and JavaScript files that make up the Google web page. The browser will utilize these files to display the webpage and present it to you. This method typically includes the following:
+
+* presenting the text and pictures on the webpage in the appropriate positions
+* arranging the text and design in line with the CSS styles
+* performing any JavaScript code that exists on the webpage
+* After the webpage has been entirely displayed, you can now engage with it by pressing links, typing text, or interacting with other features on the webpage.
+
+In conclusion, I hope that this short blog has given you a better understanding of everything that occurs "under the hood" when you type www.google.com into your browser and press Enter
 
 
 
