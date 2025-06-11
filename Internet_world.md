@@ -21,7 +21,7 @@ When you type https://www.google.com into your browser and hit Enter, a fascinat
 
 Our journey begins with a **Domain Name System** (DNS) request. The browser seeks to translate the human-friendly domain name www.google.com to an IP address, the language of computers. A query is sent to a DNS server, which acts like a phonebook for the internet, fetching the corresponding IP address for Google's server.
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 
  ### The Protocol Suite: TCP/IP
@@ -106,7 +106,7 @@ In your instance, your browser would receive the response from the website serve
 * performing any JavaScript code that exists on the webpage
 * After the webpage has been entirely displayed, you can now engage with it by pressing links, typing text, or interacting with other features on the webpage.
 
-In conclusion, I hope that this short blog has given you a better understanding of everything that occurs "under the hood" when you type www.google.com into your browser and press Enter
+In conclusion, I hope that this short blog has given you a better understanding of everything that occurs "under the hood" when you type www.google.com into your browser and press Enter.You are 
 
 
 
