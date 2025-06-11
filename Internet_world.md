@@ -31,3 +31,8 @@ With the IP address at hand,**Transmission Control Protocol/Internet Protocol** 
 ### The Guard: Firewall
 
 If your computer is situated behind a firewall, the firewall verifies that the specific request you are making is authorized before granting it. Additionally, if the server you are attempting to access is also behind a firewall, a similar check will be conducted before you can ultimately connect to the server.
+
+### The Secure Passage: HTTPS/SSL
+
+The server receiving the request sends a response back to the load balancer, which in turn sends it back to your browser. The response typically includes **HTML (Hyper Text Markup Language)**, **CSS (Cascading Style Sheets),** and **JavaScript files that make up the webpage**. The HTML files instruct the browser how to display the content, while the CSS file styles it, and the JavaScript file adds interactivity.
+
