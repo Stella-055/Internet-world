@@ -20,3 +20,14 @@ When you type https://www.google.com into your browser and hit Enter, a fascinat
 ### The Initiation: DNS Request
 
 Our journey begins with a **Domain Name System** (DNS) request. The browser seeks to translate the human-friendly domain name www.google.com to an IP address, the language of computers. A query is sent to a DNS server, which acts like a phonebook for the internet, fetching the corresponding IP address for Google's server.
+
+![alt text](image-1.png)
+
+
+ ### The Protocol Suite: TCP/IP
+
+With the IP address at hand,**Transmission Control Protocol/Internet Protocol** (TCP/IP) - the protocol suite - kicks in. TCP establishes a reliable connection between your machine and Google's server, ensuring data integrity and order. IP, on the other hand, is responsible for routing the data packets to the correct destination.This entire process is known as a **"handshake."**
+
+### The Guard: Firewall
+
+If your computer is situated behind a firewall, the firewall verifies that the specific request you are making is authorized before granting it. Additionally, if the server you are attempting to access is also behind a firewall, a similar check will be conducted before you can ultimately connect to the server.
